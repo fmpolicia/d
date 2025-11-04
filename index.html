@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francine in Onederland</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="book-container">
+        <h1>Francine in Onederland</h1>
+        <div id="flipbook"></div>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/pdf.min.js"></script>
+    <script src="lib/pdf.worker.min.js"></script>
+    <script src="lib/paginis.js"></script>
+    <script>
+        // Initialize flipbook
+        document.addEventListener("DOMContentLoaded", function() {
+            var book = new Paginis("francine.pdf");
+        });
+    </script>
+</body>
+</html>
